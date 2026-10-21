@@ -43,4 +43,8 @@ const affiche = document.querySelector('#btn');
 
 affiche.addEventListener('click', () => {
     btn.classlist.toggle('active');
+
+
 });
+
+
