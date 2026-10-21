@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des filière </title>
+    <link rel="stylesheet" href="formfiliere.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1> Formulaire de gestion de salle</h1>
+            <p>Remplissez les informations demandées</p>
+        </header>
+
+        <form id="filiere-form">
+            <p> Vos informations</p>
+            
+            <div class="ligne1">
+
+              <div class="ensemble">
+                 <label for="nom">Nom de la filière</label>
+                 <input type="text" id="nom" name="nom" required>
+               </div>
+
+               <div class="ensemble">
+                 <label for="code">Code de la filière</label>
+                 <input type="text" id="code" name="code" required>
+               </div>
+                
+            </div> 
+
+            <div class="ligne1">
+
+              <div class="ensemble">
+                 <label for="effectif">Effectif</label>
+                 <input type="number" min="0" id="effectif" name="effectif" required>
+               </div>
+
+               <div class="ensemble">
+                 <label for="date">Date</label>
+                 <input type="date" id="date" name="date" required>
+               </div>
+
+            </div>
+
+            <label for="responsable">Nom du responsable</label>
+            <input type="text" id="responsable" name="responsable" required>
+
+
+
+            <label for="besion"> Besion materiel</label>
+           <textarea id="besion" placeholder="Entrez le besion de materiel ici..." name="besion" required></textarea>
+
+
+            <section class="choisir-salle">
+                <h2> Choisir salle</h2>
+                <div class="ligne1">
+                    <div class="ensemble">
+                        <label for="salle">Nom de la salle</label>
+                        <input type="text" id="salle" name="salle" required>
+                    </div>
+
+                    <div class="ensemble">
+                        <label for="capacite">Capacité de la salle</label>
+                        <input type="text" id="capacite" name="capacite" required>
+                    </div>
+                </div>
+
+                <label for="equipement">Équipement requis</label>
+                <textarea id="equipement" placeholder="Entrez l'équipement requis ici..." name="equipement" required></textarea>
+            </section>
+
+
+            <div class="button-row">
+                 
+                <input type="submit" value="valider le formulaire" id=" valider">
+                <!-- <a href="file:///C:/wamp64/www/formulaire/buttonformulaire.html" class="button">Enregistrer</a> -->
+                 <!-- <button type="button" id="modifier">Modifier</button>
+                <button type="button" id="supprimer">Supprimer</button>
+                <button type="button" id="sugession">Suggerer salle</button>  -->
+            </div>
+
+            <p id="status-message" aria-live="polite"></p>
+        </form>
+
+        
+    </main>
+
+</body>
+</html>
