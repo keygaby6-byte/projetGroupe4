@@ -34,5 +34,13 @@ form.addEventListener('submit', async(e) => {
 
     form.reset();
 
+        
 
 })
+
+
+const affiche = document.querySelector('#btn');
+
+affiche.addEventListener('click', () => {
+    btn.classlist.toggle('active');
+});
